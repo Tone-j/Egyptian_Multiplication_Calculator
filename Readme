@@ -1,0 +1,30 @@
+Egyptian Multiplication Challenge:
+
+https://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication
+
+- Your code should exhibit an EgyptianCalculator module that handles the logic of the work.
+- There should be at least one public function, on the above module, that accepts the first and second number, then applies the Egyptian Multiplication algorithm.
+- Any positive integers should be accepted as input for the calculation.
+- The primary idea behind Egyptian Multiplication is that it should done using ONLY doubling, halving and addition.
+
+-----------------------------------------------------------------------------------------------------------
+EXAMPLE:
+
+17 * 147 = 2499
+
+MULTIPLIER (HALVED)	-- MULTIPLICAND (DOUBLED)
+      16 ->	        |      ->   147
+      8	            |           294
+      4	            |           588
+      2	            |           1176
+      1	->          |     ->    2352
+
+MULTIPLIER: 1 + 16 = 17
+Product:  2352 + 147 = 2499
+
+---------------------------------------------------------------------------------------------------
+To RUN:
+    'MAKE RUN'
+
+To TEST:
+    'MAKE TEST'
