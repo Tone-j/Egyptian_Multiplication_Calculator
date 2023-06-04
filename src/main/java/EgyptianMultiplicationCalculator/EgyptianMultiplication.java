@@ -12,8 +12,8 @@ public class EgyptianMultiplication {
     }
 
     static Data data = new Data();
-    private static ArrayList<Integer> left = new ArrayList<Integer>();
-    private static ArrayList<Integer> right = new ArrayList<Integer>();
+    private static final ArrayList<Integer> left = new ArrayList<>();
+    private static final ArrayList<Integer> right = new ArrayList<>();
 
     /**
      * GetList1Algo is a methode that takes the first values given in the equation and
@@ -23,7 +23,7 @@ public class EgyptianMultiplication {
 
         int current = 1;
 
-        while (current < value1) {
+        while (current <= value1) {
             left.add(current);
             current *= 2;
         }

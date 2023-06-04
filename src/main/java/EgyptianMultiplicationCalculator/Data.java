@@ -7,7 +7,7 @@ public class Data {
 
     /**
      *System.in is a standard input stream.
-     * This Class is responsible for collecting all the data neeeded by the main Class.
+     * This Class is responsible for collecting all the data needed by the main Class.
      * it also makes sure that it collect positive integers only and return them.
      */
     private final Scanner inputScanner;
@@ -24,11 +24,11 @@ public class Data {
 
     public int getFirstNumber(){
 
-        System.out.println("Enter first number: ");
+        toString("Enter first number: ");
         int firstValue = this.inputScanner.nextInt();
 
         if (firstValue < 1){
-            System.out.println("Error: make sure value is positive");
+            toString("Error: make sure value is positive");
             getFirstNumber();
         }
 
@@ -50,9 +50,13 @@ public class Data {
 
     public int calcController(){
 
-        System.out.println("press 0 to quit and any positive number to continue");
+        toString("press 0 to quit and any positive number to continue");
         int contr = this.inputScanner.nextInt();
 
         return contr;
+    }
+
+    public void toString(String massage){
+        System.out.println(massage);
     }
 }
